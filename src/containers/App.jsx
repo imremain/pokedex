@@ -25,6 +25,8 @@ import '../assets/css/slicknav.css';
 
 const App = (props) => {
   return (
+    
+    <BrowserRouter>
     <div className='App'>
       
       <Helmet>
@@ -55,14 +57,13 @@ const App = (props) => {
         <script src="%PUBLIC_URL%/../assets/js/main.js" type="text/javascript"/>
       </Helmet>
       <Header />
-      <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Main} />
-          <Route exact path="/pokemon" component={Pokemon} />
+          <Route exact path="/" component={ Main } />
+          <Route path="/pokemon/:id" component={ Pokemon } />
         </Switch>
-      </BrowserRouter>
       <Footer />
-    </div>
+    </div>    
+    </BrowserRouter>
   );
 };
 

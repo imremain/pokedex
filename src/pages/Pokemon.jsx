@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
- class Pokemon extends Component {
-    render(){
-        return(
-            <h1>Hello.</h1>
-        )
-    }
-}
- export default Pokemon;
+import React, { Fragment } from 'react';
+ 
+const Pokemon = () => (
+    <Fragment>
+        <Hero />
+    </Fragment>
+)
+
+export default Pokemon;

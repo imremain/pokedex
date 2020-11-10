@@ -3,8 +3,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Logo from '../assets/img/logo.png';
+import { Link } from 'react-router-dom';
 
-const Header = (props) => (
+const Header = () => (
   <header>
     <div className='header-area header-transparent'>
       <div className='main-header '>
@@ -21,10 +22,9 @@ const Header = (props) => (
                   <div className='main-menu d-none d-lg-block'>
                     <nav>
                       <ul id='navigation'>
-                        <li className='active'><a href='/'>Home</a></li>
-                        <li><a href='courses.html'>Abilities</a></li>
-                        <li><a href='about.html'>About</a></li>
-                        <li className='button-header'><a href='login.html' className='btn btn3'>Start</a></li>
+                        <li className='active'><Link to='/'>Home</Link></li>
+                        <li><Link to='/pokemon'>Pokemon</Link></li>
+                        <li><Link to='/abilities'>Abilities</Link></li>
                       </ul>
                     </nav>
                   </div>
